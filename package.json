@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/tatsuteb/GitHubPagesExperiment/issues"
   },
-  "homepage": "https://github.com/tatsuteb/GitHubPagesExperiment#readme",
+  "homepage": "https://tatsuteb.github.io/GitHubPagesExperiment/",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
