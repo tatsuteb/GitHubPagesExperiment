@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --dist-dir docs",
+    "build": "parcel build src/index.html --public-url /GitHubPagesExperiment",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
