@@ -6,9 +6,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /GitHubPagesExperiment --dist-dir docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run build --prefix examples && npm run copy -- --dist-dir dist && parcel src/index.html",
+    "build": "npm run build --prefix examples && npm run copy -- --dist-dir docs && parcel build src/index.html --public-url /GitHubPagesExperiment --dist-dir docs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "node copy-examples.mjs"
   },
   "repository": {
     "type": "git",
@@ -22,13 +23,17 @@
   },
   "homepage": "https://tatsuteb.github.io/GitHubPagesExperiment/",
   "dependencies": {
+    "@monaco-editor/react": "^4.4.5",
+    "monaco-editor": "^0.34.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@parcel/transformer-typescript-tsc": "^2.7.0",
+    "@types/node": "^18.7.16",
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
+    "command-line-args": "^5.2.1",
     "parcel": "^2.7.0",
     "process": "^0.11.10",
     "typescript": "^4.8.2"
