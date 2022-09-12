@@ -30,6 +30,7 @@ const App = () => {
         code={userCode} />
       <div>
         <button
+          className='btn btn-primary'
           onClick={() => setUserCode(editorRef.current?.getValue() ?? '')}>Update</button>
       </div>
       <Editor
